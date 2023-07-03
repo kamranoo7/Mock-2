@@ -1,8 +1,8 @@
 
 
 //Fetch Data
-let getdata=async()=>{
-    let res=await fetch(`https://dull-puce-antelope-coat.cyclic.app/users`)
+let getdata=async(page_no)=>{
+    let res=await fetch(`https://dull-puce-antelope-coat.cyclic.app/users?_page=${page_no}_limit=5`)
     let data=await res.json()
     Show(data)
 }
@@ -75,6 +75,7 @@ async function delete1(index){
 
 let res=await fetch(`https://dull-puce-antelope-coat.cyclic.app/users/${id}`,{
     method:"DELETE",
+   
     headers:{
 "Content-Type":"application/json"
     },
@@ -86,3 +87,8 @@ console.log(data)
 
 //Pagination
 
+function Pagination(result,perpage){
+let buttons=Math.ceil(result/perpage)
+console.log(buttons)
+}
+Pagination(10,2)
