@@ -1,0 +1,44 @@
+{
+  "users": [
+    {
+      "name": "MD KAMRAN KHAN",
+      "age": "25",
+      "place": "Lucknow",
+      "profession": "FSD",
+      "batch_name": "WEB-15",
+      "id": 1
+    },
+    {
+      "name": "Aammir",
+      "age": "26",
+      "place": "Delhi",
+      "profession": "Frontend",
+      "batch_name": "WEB-14",
+      "id": 2
+    },
+    {
+      "name": "Neeraj",
+      "age": "34",
+      "place": "Ghaziabad",
+      "profession": "Student",
+      "batch_name": "WEB-14",
+      "id": 3
+    },
+    {
+      "name": "Nikhil",
+      "age": "26",
+      "place": "Kanpur",
+      "profession": "FSD",
+      "batch_name": "WEB-13",
+      "id": 6
+    },
+    {
+      "name": "Mehtab",
+      "age": "12",
+      "place": "Lucknow",
+      "profession": "Student",
+      "batch_name": "WEB-14",
+      "id": 7
+    }
+  ]
+}

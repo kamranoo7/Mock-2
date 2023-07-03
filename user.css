@@ -1,0 +1,37 @@
+.navbar{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-top: -5px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    padding: 30px;
+    background-color: rgb(136, 167, 157);
+    justify-content: space-between;
+}
+body{
+    background-color: rgb(77, 59, 59);
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.form{
+    background-color: white;
+margin-left: 36%;
+border-radius:10px ;
+margin-top: 4%;
+box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+width: 320px;
+padding: 10px;
+}
+input{
+    width: 300px;
+    height: 20px;
+}
+h1{
+    text-align: center;
+}
+button{
+    width: 300px;
+    height: 40px;
+}
