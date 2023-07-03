@@ -16,7 +16,7 @@ let bag={
     profession,
     batch_name
 }
-let res=await fetch("http://localhost:8080/users",{
+let res=await fetch("https://dull-puce-antelope-coat.cyclic.app/users",{
     method:"POST",
     body:JSON.stringify(bag),
     headers:{

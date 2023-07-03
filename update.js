@@ -1,5 +1,5 @@
 let getdata=async(page_no)=>{
-    let res=await fetch(`http://localhost:8080/users?_page=${page_no}&_limit=5`)
+    let res=await fetch(`https://dull-puce-antelope-coat.cyclic.app/users`)
     let data=await res.json()
  console.log(data)
 }
@@ -28,7 +28,7 @@ let bag={
     profession,
     batch_name
 }
-let res=await fetch(`http://localhost:8080/users/${id}`,{
+let res=await fetch(`https://dull-puce-antelope-coat.cyclic.app/users/${id}`,{
     method:"PATCH",
     body:JSON.stringify(bag),
     headers:{

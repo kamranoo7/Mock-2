@@ -1,5 +1,5 @@
 let getdata=async(page_no)=>{
-    let res=await fetch(`http://localhost:8080/users`)
+    let res=await fetch(`https://dull-puce-antelope-coat.cyclic.app/users`)
     let data=await res.json()
     console.log(data)
     console.log(data.length)
@@ -8,7 +8,7 @@ let getdata=async(page_no)=>{
 }
 async function filter(){
     let x=document.getElementById("Profession").value
-        let res=await fetch("http://localhost:8080/users")
+        let res=await fetch("https://dull-puce-antelope-coat.cyclic.app/users")
         let data=await res.json()
         let list=data.filter((el)=>{
             return el.profession===x

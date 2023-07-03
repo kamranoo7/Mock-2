@@ -1,8 +1,8 @@
 
 
 //Fetch Data
-let getdata=async(page_no)=>{
-    let res=await fetch(`http://localhost:8080/users?_page=${page_no}&_limit=5`)
+let getdata=async()=>{
+    let res=await fetch(`https://dull-puce-antelope-coat.cyclic.app/users`)
     let data=await res.json()
     Show(data)
 }
@@ -10,7 +10,7 @@ getdata()
 //Sort By age Ascending
 document.getElementById("SortAge").addEventListener("click",SortAge)
 async function SortAge(){
-    let res=await fetch("http://localhost:8080/users")
+    let res=await fetch("https://dull-puce-antelope-coat.cyclic.app/users")
     let data=await res.json()
     data.sort((a,b)=>{
         return a.age-b.age
@@ -20,7 +20,7 @@ async function SortAge(){
 //Deescending
 document.getElementById("SortAge1").addEventListener("click",SortAge1)
 async function SortAge1(){
-    let res=await fetch("http://localhost:8080/users")
+    let res=await fetch("https://dull-puce-antelope-coat.cyclic.app/users")
     let data=await res.json()
     data.sort((a,b)=>{
         return b.age-a.age
@@ -31,7 +31,7 @@ async function SortAge1(){
 
 async function filter(){
 let x=document.getElementById("Profession").value
-    let res=await fetch("http://localhost:8080/users")
+    let res=await fetch("https://dull-puce-antelope-coat.cyclic.app/users")
     let data=await res.json()
     let list=data.filter((el)=>{
         return el.profession===x
@@ -73,7 +73,7 @@ a.setAttribute("href","/update.html")
 async function delete1(index){
     let id=index+1
 
-let res=await fetch(`http://localhost:8080/users/${id}`,{
+let res=await fetch(`https://dull-puce-antelope-coat.cyclic.app/users/${id}`,{
     method:"DELETE",
     headers:{
 "Content-Type":"application/json"
